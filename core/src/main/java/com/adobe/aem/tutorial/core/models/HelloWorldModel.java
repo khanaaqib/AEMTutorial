@@ -47,6 +47,8 @@ public class HelloWorldModel {
 
     private String message;
 
+    private String testing;
+
     @PostConstruct
     protected void init() {
         PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
