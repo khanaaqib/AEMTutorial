@@ -56,7 +56,7 @@ public class HelloWorldModel2 {
 
         message = "Hello World!\n"
             + "Resource type is: " + resourceType + "\n"
-            + "Current page is:  " + currentPagePath + "\n"
+            + "Current page is:  " + currentPagePath + "\n";
             + "Testing info:  " + currentPagePath + "\n";
     }
 
