@@ -45,7 +45,7 @@ public class HelloWorldModel 1 {
     @SlingObject
     private ResourceResolver resourceResolver;
 
-    private String message;
+    private String message;12
 
     @PostConstruct
     protected void init() {
