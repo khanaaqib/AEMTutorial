@@ -60,7 +60,7 @@ public class HelloWorldModel {
     }
 
     public String getMessage() {
-        return message + "hello";
+        return message;
     }
 
 }
