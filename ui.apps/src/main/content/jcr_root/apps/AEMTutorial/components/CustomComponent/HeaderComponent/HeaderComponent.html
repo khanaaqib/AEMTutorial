@@ -1,1 +1,11 @@
-<header>${properties.homePage}</header>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
+    data-sly-call="${clientlib.css @ categories='Header-Component'}"/>
+
+<div class="header">
+    <a class="logo">Website Logo</a>
+    <div class="header-right">
+        <a class="active">${properties.homePage}</a>
+        <a>${properties.aboutPage}</a>
+        <a>${properties.contactPage}</a>
+   </div>
+</div>

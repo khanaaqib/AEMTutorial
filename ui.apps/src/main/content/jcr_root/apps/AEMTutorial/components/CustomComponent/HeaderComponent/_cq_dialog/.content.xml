@@ -12,6 +12,16 @@
                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                 fieldLabel="Home Page Title"
                 name="./homePage"/>
+            <aboutustitle
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldLabel="About Us Page Title"
+                name="./aboutPage"/>
+            <contactustitle
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldLabel="Contact Us Page Title"
+                name="./contactPage"/>
         </items>
     </content>
 </jcr:root>
