@@ -12,16 +12,41 @@
                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                 fieldLabel="Resources Page Title"
                 name="./resourcePage"/>
+            <resourcesUrl
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                fieldLabel="Resources URL"
+                name="./resourcesUrl"/>
             <aboutustitle
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                 fieldLabel="About Us Page Title"
                 name="./aboutTitle"/>
+            <aboutusUrl
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                fieldLabel="About Us URL"
+                name="./aboutURL"/>
             <help
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                 fieldLabel="Help Page Title"
                 name="./help"/>
+            <helpUrl
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                fieldLabel="Help Page URL"
+                name="./helpURL"/>
+            <facebookImg
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                fieldLabel="Facebook Image"
+                name="./facebookImg"/>
+            <facebookPath
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                fieldLabel="Facebook Path"
+                name="./facebookPath"/>
         </items>
     </content>
 </jcr:root>
