@@ -4,8 +4,16 @@
 <div class="header">
     <a class="logo">Website Logo</a>
     <div class="header-right">
-        <a href="${properties.homePageUrl}" target="_blank" class="active">${properties.homePage}</a>
-        <a href="${properties.aboutUsUrl}" target="_blank">${properties.aboutPage}</a>
-        <a href="${properties.contactUsUrl}" target="_blank">${properties.contactPage}</a>
+        <div data-sly-test="${properties.newTab}">
+            <a href="${properties.homePageUrl}" target="_blank" class="active">${properties.homePage}</a>
+            <a href="${properties.aboutUsUrl}" target="_blank">${properties.aboutPage}</a>
+            <a href="${properties.contactUsUrl}" target="_blank">${properties.contactPage}</a>
+        </div>
+
+        <div data-sly-test="${!properties.newTab}">
+            <a href="${properties.homePageUrl}" target="_self" class="active">${properties.homePage}</a>
+            <a href="${properties.aboutUsUrl}" target="_self">${properties.aboutPage}</a>
+            <a href="${properties.contactUsUrl}" target="_self">${properties.contactPage}</a>
+        </div>
    </div>
 </div>
