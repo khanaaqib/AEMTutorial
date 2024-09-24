@@ -1,0 +1,11 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
+    data-sly-call="${clientlib.css @ categories='Hero-Component'}"/>
+
+<div>
+	<img src="${properties.imagePath}" class="Hero-Image" alt="Hero Image">
+    <div class="logo-design-button">
+        <h1>${properties.heroTitle}</h1>
+		<p>${properties.herosubtitle}</p>
+        <button>${properties.exploreMore}</button>
+    </div>
+</div>
