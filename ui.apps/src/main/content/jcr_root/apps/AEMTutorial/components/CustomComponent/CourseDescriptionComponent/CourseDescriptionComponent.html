@@ -1,0 +1,10 @@
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
+    data-sly-call="${clientlib.css @ categories='Course-Description-Component'}"/>
+<div>
+  <img src="${properties.courseImage}" alt="${properties.coursealttext}" class="Course-Image">
+  <div>
+     <h3 class="Course-Heading">${properties.courseHeading}</h3>
+     <p class="Course-Paragraph">${properties.courseDescription}</p>
+  </div>
+</div>
