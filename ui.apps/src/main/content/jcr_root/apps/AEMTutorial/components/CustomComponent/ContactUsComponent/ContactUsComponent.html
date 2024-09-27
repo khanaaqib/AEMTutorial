@@ -1,0 +1,21 @@
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
+    data-sly-call="${clientlib.css @ categories='Contact-Us-Component'}"/>
+
+
+
+<form class="modal-content">
+  <div class="container">
+       <h2>Contact Us Form</h2>
+       <hr>
+       <label for="fname"><b>First Name</b></label>
+       <input type="text" name="fname" id="fname" required>
+       <label for="lname"><b>Last Name</b></label>
+       <input type="text" name="lname" id="lname" required>
+       <label for="email"><b>Email</b></label>
+       <input type="text" name="email" id="email" required>
+       <label for="comment"><b>How can we help you?</b></label>
+       <textarea id="comment" name="comment" style="height:200px"></textarea>
+       <button type="submit" class="signupbtn">Submit</button>
+  </div>
+</form>
