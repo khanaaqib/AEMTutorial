@@ -1,19 +1,21 @@
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
     data-sly-call="${clientlib.css @ categories='Header-Component'}"/>
 
-<div class="header">
+<div class="navbar">
     <a class="logo">Website Logo</a>
-    <div class="header-right">
-        <div data-sly-test="${properties.newTab}">
-            <a href="${properties.homePageUrl}" target="_blank" class="active">${properties.homePage}</a>
-            <a href="${properties.aboutUsUrl}" target="_blank">${properties.aboutPage}</a>
-            <a href="${properties.contactUsUrl}" target="_blank">${properties.contactPage}</a>
+    <a href="${properties.homePageUrl}">${properties.homePage}</a>
+    <div class="subnav">
+     	<button class="subnavbtn">${properties.aboutPage}</button>
+        <div class="subnav-content">
+        	<a href="#">Company</a>
+			<a href="#">Our Team</a>
+			<a href="#">References</a>
+			<a href="#">Courses</a>
         </div>
-
-        <div data-sly-test="${!properties.newTab}">
-            <a href="${properties.homePageUrl}" target="_self" class="active">${properties.homePage}</a>
-            <a href="${properties.aboutUsUrl}" target="_self">${properties.aboutPage}</a>
-            <a href="${properties.contactUsUrl}" target="_self">${properties.contactPage}</a>
-        </div>
-   </div>
+    </div>
+    <div class="subnav-right">
+    	<a href="${properties.signupUrl}">${properties.signupPage}</a>
+        <a href="${properties.loginPagePath}">${properties.logintitle}</a>
+        <a href="${properties.myaccountPagePath}">${properties.myaccountTitle}</a>
+    </div>
 </div>

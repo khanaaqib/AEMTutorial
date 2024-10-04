@@ -1,38 +1,70 @@
-* {box-sizing: border-box;}
-
-
-.header {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
-.header a {
+.navbar {
+  overflow: hidden;
+  background-color: #131111; 
+}
+
+.navbar a {
   float: left;
-  color: black;
+  font-size: 16px;
+  color: white;
   text-align: center;
-  padding: 12px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
 }
 
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+.subnav {
+  float: left;
+  overflow: hidden;
 }
 
-.header a:hover {
-  background-color: #ddd;
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  line-height: 25px;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #eee;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #131111;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
   color: black;
 }
 
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
+.subnav:hover .subnav-content {
+  display: block;
 }
 
-.header-right {
+.subnav-right{
   float: right;
 }
