@@ -1,8 +1,9 @@
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
     data-sly-call="${clientlib.css @ categories='Header-Component'}"/>
 
+
 <div class="navbar">
-    <a class="logo">Website Logo</a>
+    <img src="/content/dam/AEMTutorial/LOGO.jpg" alt="Header Image Logo" class="logo_image">
     <a href="${properties.homePageUrl}">${properties.homePage}</a>
     <div class="subnav">
      	<button class="subnavbtn">${properties.aboutPage}</button>
