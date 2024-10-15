@@ -1,12 +1,12 @@
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
     data-sly-call="${clientlib.css @ categories='Header-Component'}"/>
 
-
+<sly data-sly-use.headerValue="com.adobe.aem.tutorial.core.models.HeaderComponentModel">
 <div class="navbar">
-    <img src="/content/dam/AEMTutorial/LOGO.jpg" alt="Header Image Logo" class="logo_image">
-    <a href="${properties.homePageUrl}">${properties.homePage}</a>
+    <img src="${properties.logoImage}" alt="Header Image Logo" class="logo_image">
+    <a href="${headerValue.homePageUrl}">${headerValue.homePage}</a>
     <div class="subnav">
-     	<button class="subnavbtn">${properties.aboutPage}</button>
+     	<button class="subnavbtn">${headerValue.aboutPage}</button>
         <div class="subnav-content">
         	<a href="#">Company</a>
 			<a href="#">Our Team</a>
@@ -15,8 +15,9 @@
         </div>
     </div>
     <div class="subnav-right">
-    	<a href="${properties.signupUrl}">${properties.signupPage}</a>
-        <a href="${properties.loginPagePath}">${properties.logintitle}</a>
-        <a href="${properties.myaccountPagePath}">${properties.myaccountTitle}</a>
+    	<a href="${headerValue.signupUrl}">${headerValue.signupPage}</a>
+        <a href="${headerValue.loginPagePath}">${headerValue.logintitle}</a>
+        <a href="${headerValue.myaccountPagePath}">${headerValue.myaccountTitle}</a>
     </div>
 </div>
+</sly>
