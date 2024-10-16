@@ -6,6 +6,7 @@ import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 
 import javax.inject.Inject;
+import java.util.List;
 
 @Model(adaptables = Resource.class,defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class HeaderComponentModel {
@@ -36,6 +37,12 @@ public class HeaderComponentModel {
 
     @Inject
     private String myaccountTitle;
+
+    @Inject
+    private  String logoImage;
+
+    @Inject
+    private List<HeaderComponentSubNavigationModel> aboutUsSubNavigation;
 
     public String getHomePage() {
         return homePage;
@@ -71,5 +78,13 @@ public class HeaderComponentModel {
 
     public String getMyaccountTitle() {
         return myaccountTitle;
+    }
+
+    public String getLogoImage() {
+        return logoImage;
+    }
+
+    public List<HeaderComponentSubNavigationModel> getAboutUsSubNavigation() {
+        return aboutUsSubNavigation;
     }
 }

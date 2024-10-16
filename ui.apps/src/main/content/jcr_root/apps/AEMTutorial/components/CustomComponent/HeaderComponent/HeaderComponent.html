@@ -3,15 +3,14 @@
 
 <sly data-sly-use.headerValue="com.adobe.aem.tutorial.core.models.HeaderComponentModel">
 <div class="navbar">
-    <img src="${properties.logoImage}" alt="Header Image Logo" class="logo_image">
+    <img src="${headerValue.logoImage}" alt="Header Image Logo" class="logo_image">
     <a href="${headerValue.homePageUrl}">${headerValue.homePage}</a>
     <div class="subnav">
      	<button class="subnavbtn">${headerValue.aboutPage}</button>
         <div class="subnav-content">
-        	<a href="#">Company</a>
-			<a href="#">Our Team</a>
-			<a href="#">References</a>
-			<a href="#">Courses</a>
+            <div data-sly-list.subNavValue="${headerValue.aboutUsSubNavigation}">
+                <a href="${subNavValue.subNavUrl}">${subNavValue.subNavTitle}</a>
+            </div>
         </div>
     </div>
     <div class="subnav-right">
